@@ -100,22 +100,6 @@ filetree
 - [xxxxxxx](https://jquery.com)
 - [xxxxxxx](https://laravel.com)
 
-### 貢獻者
-
-請閱讀**CONTRIBUTING.md** 查閱為該專案做出貢獻的開發者。
-
-#### 如何參與開源專案
-
-貢獻使開源社區成為一個學習、激勵和創造的絕佳場所。你所作的任何貢獻都是**非常感謝**的。
-
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
 
 ### 版本控制
 
