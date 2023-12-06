@@ -135,30 +135,5 @@ xxx@xxxx
 
 該項目簽署了MIT 授權許可，詳情請參閱 [LICENSE.txt](https://github.com/your_github_name/your_repository/blob/master/LICENSE.txt)
 
-### 鳴謝
-
-
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Img Shields](https://shields.io)
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Pages](https://pages.github.com)
-- [Animate.css](https://daneden.github.io/animate.css)
-- [xxxxxxxxxxxxxx](https://connoratherton.com/loaders)
-
-<!-- links -->
-[your-project-path]:your_github_name/your_repository
-[contributors-shield]: https://img.shields.io/github/contributors/your_github_name/your_repository.svg?style=flat-square
-[contributors-url]: https://github.com/your_github_name/your_repository/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/your_github_name/your_repository.svg?style=flat-square
-[forks-url]: https://github.com/your_github_name/your_repository/network/members
-[stars-shield]: https://img.shields.io/github/stars/your_github_name/your_repository.svg?style=flat-square
-[stars-url]: https://github.com/your_github_name/your_repository/stargazers
-[issues-shield]: https://img.shields.io/github/issues/your_github_name/your_repository.svg?style=flat-square
-[issues-url]: https://img.shields.io/github/issues/your_github_name/your_repository.svg
-[license-shield]: https://img.shields.io/github/license/your_github_name/your_repository.svg?style=flat-square
-[license-url]: https://github.com/your_github_name/your_repository/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/shaojintian
-
 
 
