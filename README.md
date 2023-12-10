@@ -2,8 +2,6 @@
 
 # AICUP
 
-Description
-
 
 <!-- PROJECT LOGO -->
 <br />
