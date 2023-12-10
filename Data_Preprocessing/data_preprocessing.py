@@ -111,7 +111,7 @@ def generate_annotated_medical_report_parallel(anno_file_path, medical_report_fo
     print("tsv format dataset done")
     # return all_seq_pairs
 
-anno_info_path = r"answer.txt"
-report_folder = r"Validation_Release"
-tsv_output_path = './train.tsv'
+anno_info_path = r"/answer/answer.txt"
+report_folder = r"/dataset/Validation_Release"
+tsv_output_path = './output.tsv'
 generate_annotated_medical_report_parallel(anno_info_path, report_folder, tsv_output_path, num_processes=4)
