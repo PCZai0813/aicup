@@ -80,12 +80,12 @@ filetree
 
 ### 資料前處理
 
-請將資料集放入 /Data_Preprocessing/dataset <br>
-請將資料集標註檔放入 /Data_Preprocessing/answer <br>
-運行此程式碼 /Data_Preprocessing/data_preprocessing.py <br>
-最後會輸出 output.tsv 在 /Data_Preprocessing
+1. 請將資料集放入 /Data_Preprocessing/dataset
+2. 請將資料集標註檔放入 /Data_Preprocessing/answer
+3. 運行此程式碼 /Data_Preprocessing/data_preprocessing.py
+4. 最後會輸出 output.tsv 在 /Data_Preprocessing
 
-### 部署
+### 模型訓練
 
 暫無
 
