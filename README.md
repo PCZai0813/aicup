@@ -194,7 +194,11 @@ git clone https://github.com/PCZai0813/aicup.git
    f.close()
    ```
 
-### 預訓練模型來源
-  https://huggingface.co/EleutherAI/pythia-160m-deduped
+### 資料來源
+  * https://huggingface.co/EleutherAI/pythia-160m-deduped
+  * https://nkustislab.github.io/docs/project/aicup/guideline.pdf
+  * https://www.youtube.com/watch?v=m5w3wR82u-s&ab_channel=ISLab
+  * https://www.youtube.com/watch?v=bMYPE20joyU&ab_channel=ISLab
+  * https://www.youtube.com/watch?v=w-a2PIYmFvY&ab_channel=ISLab
 
 
