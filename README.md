@@ -1,11 +1,3 @@
-
-
-# AICUP
-
-
-<!-- PROJECT LOGO -->
-<br />
-
 <p align="center">
   <h1>TEAM_4084</h1>
   <p>
