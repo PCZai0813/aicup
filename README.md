@@ -11,20 +11,11 @@
   <p align="center">
     Rank: 27.00 (20)	Task1: 0.7444 (28)	Task2: 0.5961 (26)
     <br />
-    <a href="https://github.com/PCZai0813/aicup"><strong>探索本專案的文檔 »</strong></a>
+    <a href="https://github.com/PCZai0813/aicup/blob/main/main.ipynb"><strong>本專案的主要程式碼 »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/your_github_name/your_repository">查看Demo</a>
-    ·
-    <a href="https://github.com/your_github_name/your_repository/issues">報告Bug</a>
-    ·
-    <a href="https://github.com/your_github_name/your_repository/issues">提出新特性</a>
   </p>
 
 </p>
-
-
- 本篇README.md面向開發者
  
 ## 目錄
 
@@ -45,16 +36,19 @@
 
 ###### 開發前的配置要求
 
-1. xxxxx x.x.x
-2. xxxxx x.x.x
-
+1. 硬體環境<br>
+   - 處理器（CPU）：Intel i5 13600K<br>
+   - 顯示卡（GPU）：NVIDIA GeForce 3060ti
+2. 程式語言<br>
+   - Python 3.11.5
+3. 套件<br>
+   - Conda、PyTorch、Transformers、Datasets、Random、PEFT、TQDM、Matplotlib
 ###### **安裝步驟**
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
 
 ```sh
-git clone https://github.com/your_github_name/your_repository.git
+git clone https://github.com/PCZai0813/aicup.git
 ```
 
 ### 檔目錄說明
