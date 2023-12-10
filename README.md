@@ -55,7 +55,6 @@
 - [上手指南](#上手指南)
   - [專案實驗配置](#專案實驗配置)
   - [安裝步驟](#安裝步驟)
-- [檔目錄說明](#檔目錄說明)
 - [資料前處理](#資料前處理)
 - [模型訓練](#模型訓練)
 - [匯入驗證集並生成標註與後處理](#匯入驗證集並生成標註與後處理)
@@ -81,32 +80,6 @@
 ```sh
 git clone https://github.com/PCZai0813/aicup.git
 ```
-
-### 檔目錄說明
-eg:
-
-```
-filetree 
-├── ARCHITECTURE.md
-├── LICENSE.txt
-├── README.md
-├── /account/
-├── /bbs/
-├── /docs/
-│  ├── /rules/
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-├── manage.py
-├── /oa/
-├── /static/
-├── /templates/
-├── useless.md
-└── /util/
-
-```
-
-
-
 
 
 ### 資料前處理
