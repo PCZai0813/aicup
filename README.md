@@ -220,7 +220,6 @@ filetree
    f.close()
    ```
 
-該項目簽署了MIT 授權許可，詳情請參閱 [LICENSE.txt](https://github.com/your_github_name/your_repository/blob/master/LICENSE.txt)
 
 
 
