@@ -9,11 +9,11 @@ Description
 <br />
 
 <p align="center">
-  <h3 align="center">README範本</h3>
+  <h3 align="center">TEAM_4084</h3>
   <p align="center">
-    一個"完美的"README範本去快速開始你的專案！
+    Rank: 27.00 (20)	Task1: 0.7444 (28)	Task2: 0.5961 (26)
     <br />
-    <a href="https://github.com/your_github_name/your_repository"><strong>探索本專案的文檔 »</strong></a>
+    <a href="https://github.com/PCZai0813/aicup"><strong>探索本專案的文檔 »</strong></a>
     <br />
     <br />
     <a href="https://github.com/your_github_name/your_repository">查看Demo</a>
