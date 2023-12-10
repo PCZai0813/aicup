@@ -24,7 +24,7 @@
   - [安裝步驟](#安裝步驟)
 - [檔目錄說明](#檔目錄說明)
 - [資料前處理](#資料前處理)
-- [部署](#部署)
+- [模型訓練](#模型訓練)
 - [使用到的框架](#使用到的框架)
 - [版本控制](#版本控制)
 
@@ -87,8 +87,65 @@ filetree
 
 ### 模型訓練
 
-暫無
-
+1. 請使用 main.ipynb
+   <br>
+2. 此處可以修改預訓練模型，這段程式碼使用的是EleutherAI/pythia-160m-deduped
+   ```py
+    from transformers import AutoTokenizer, AutoModelForCausalLM
+    from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+    
+    plm = "EleutherAI/pythia-160m-deduped"
+    
+    bos = '<|endoftext|>'
+    eos = '<|END|>'
+    pad = '<|pad|>'
+    sep ='\n\n####\n\n'
+    
+    special_tokens_dict = {'eos_token': eos, 'bos_token': bos, 'pad_token': pad, 'sep_token': sep}
+    
+    tokenizer = AutoTokenizer.from_pretrained(plm, revision="step3000")
+    num_added_toks = tokenizer.add_special_tokens(special_tokens_dict)
+    tokenizer.padding_side = 'left'
+    ```
+   <br>
+3. 此程式碼會將經過前處理的資料集匯入成dataset，此處使用了四個資料集
+   ```py
+   from datasets import load_dataset, Features, Value, concatenate_datasets
+   dataset1 = load_dataset("csv", data_files="opendid_set1.tsv", delimiter='\t',
+                           features = Features({
+                                  'fid': Value('string'), 'idx': Value('int64'),
+                                  'content': Value('string'), 'label': Value('string')}),
+                           column_names=['fid', 'idx', 'content', 'label'], keep_default_na=False)
+    
+   dataset2 = load_dataset("csv", data_files="opendid_set2.tsv", delimiter='\t',
+                           features = Features({
+                                  'fid': Value('string'), 'idx': Value('int64'),
+                                  'content': Value('string'), 'label': Value('string')}),
+                           column_names=['fid', 'idx', 'content', 'label'], keep_default_na=False)
+   dataset_fake = load_dataset("csv", data_files="fake.tsv", delimiter='\t',
+                           features = Features({
+                                  'fid': Value('string'), 'idx': Value('int64'),
+                                  'content': Value('string'), 'label': Value('string')}),
+                           column_names=['fid', 'idx', 'content', 'label'], keep_default_na=False)
+   dataset_Validation = load_dataset("csv", data_files="Validation_opendid.tsv", delimiter='\t',
+                           features = Features({
+                                  'fid': Value('string'), 'idx': Value('int64'),
+                                  'content': Value('string'), 'label': Value('string')}),
+                           column_names=['fid', 'idx', 'content', 'label'], keep_default_na=False)
+    
+   # 組合四個資料集
+   dataset = concatenate_datasets([dataset1['train'], dataset2['train'], dataset_fake['train'], dataset_Validation['train']])
+   ```
+   <br>
+4. 此處可自行決定是否需要LoRA，可自行移除註解符號
+   ```py
+   #from peft import get_peft_model, LoraConfig, TaskType
+   #peft_config = LoraConfig(task_type=TaskType.CAUSAL_LM, inference_mode=False, r=8, lora_alpha=32, lora_dropout=0.1)
+   #model = get_peft_model(model, peft_config)
+   #model.print_trainable_parameters()
+   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+   model.to(device)
+   ```
 ### 使用到的框架
 
 - [xxxxxxx](https://getbootstrap.com)
